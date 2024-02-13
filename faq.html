@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        .faq-sec {
+            max-width: 800px;
+            margin: 0 auto !important;
+            padding: 20px;
+        }
+
+        .faq-head {
+            padding: 13px 18px 13px 44px;
+            margin-top: 20px;
+            color: #000;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 38px;
+            /* position: relative; */
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .faq-content {
+            display: none;
+        }
+
+
+        .faq-content {
+            padding-left: 44px;
+            padding-right: 35px;
+            padding-bottom: 35px;
+        }
+
+        .faq-content p {
+            color: #444;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            /* 181.25% */
+            /* 181.25% */
+            width: 95%;
+        }
+
+        .faq-head.active:after {
+            transform: rotate(180deg);
+        }
+
+        .faq-head:after {
+
+            content: url(https://user-assets-unbounce-com.s3.amazonaws.com/c76d178f-08ff-4057-a697-3a66a9d8e6fe/e62b6ed4-d45c-4225-8ec6-ee7f1ba67657/group-1410097317-2.original.svg);
+            /* background-repeat: no-repeat; */
+            /* position: absolute; */
+            right: 36px;
+            width: 30px;
+            height: 30px;
+            /* background-size: contain; */
+        }
+
+        /* .faq-sec {
+            padding: 60px 60px;
+        } */
+
+        .faq-wrap {
+            margin-bottom: 15px;
+            border-radius: 7px;
+            background: #FFF;
+            box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.05);
+        }
+
+        @media(max-width: 767px) {
+            .faq-head {
+
+                padding: 10px 10px 10px 17px;
+                font-size: 16px;
+                line-height: 23px;
+            }
+
+            .faq-sec {
+                padding: 8px;
+            }
+
+
+            .faq-content {
+                padding: 15px 15px;
+                padding-top: 0px;
+                padding-right: 0px;
+            }
+
+            .faq-head {
+                padding: 10px 10px 10px 17px;
+                font-size: 16px;
+                line-height: 23px;
+                /* position: relative; */
+            }
+
+            .faq-content p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .faq-head:after {
+                margin-left: 10px;
+                transform: scale(0.8) !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="faq-sec">
+
+        <div class="faq-wrap">
+            <div class="faq-head active">Q: Will the roofing process be disruptive to my daily life?</div>
+            <div class="faq-content" style="display: block">
+                <p>
+                    We strive to minimize disruption. Our team works efficiently and keeps the site tidy. We schedule
+                    our work to ensure it's as convenient for you as possible, keeping noise and disturbance to a
+                    minimum.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-wrap">
+            <div class="faq-head">Q: How do I know I'm getting a fair price?</div>
+            <div class="faq-content">
+                <p>
+                    Our pricing is transparent and competitive. We provide detailed quotes, explaining all costs
+                    upfront. There are no hidden fees, and we offer the best value for high-quality materials and
+                    workmanship.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-wrap">
+            <div class="faq-head">Q: Can you handle special roofing materials or designs?</div>
+            <div class="faq-content">
+                <p>
+                    Absolutely! Our team is skilled in a variety of roofing materials and designs, including asphalt
+                    shingles, metal roofing (both standing seam and corrugated metal), rubber roofing, and more. We can
+                    work with you to create a roof that meets your specific needs and aesthetics, whether you're looking
+                    for traditional styles or something more modern and unique.
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="faq-wrap">
+            <div class="faq-head">Q: How long will my new roof last?</div>
+            <div class="faq-content">
+                <p>
+                    The lifespan of your roof depends on the materials and environmental factors. Generally, our roofs
+                    last many years, with warranties for added peace of mind. We use durable materials and expert
+                    installation for long-lasting performance.
+            </div>
+        </div>
+
+        <div class="faq-wrap">
+            <div class="faq-head">Q: What if I have an emergency roofing problem?</div>
+            <div class="faq-content">
+                <p>
+                    We understand the urgency of roofing emergencies. We offer prompt response to address critical
+                    issues quickly to prevent further damage. Our team is equipped to handle urgent repairs efficiently
+                    and effectively.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".faq-head").click(function () {
+                $(".faq-head").not(this).removeClass("active");
+                $(this).toggleClass("active");
+                $(".faq-head").not(this).next(".faq-content").slideUp();
+                $(this).next(".faq-content").slideToggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

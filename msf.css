@@ -1,0 +1,247 @@
+<style>h2.form-heading {
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 13px;
+    font-size: 18px;
+    color: #000;
+    font-family: Open Sans;
+}
+
+.text_white {
+    color: #ffffff !important;
+}
+
+#lp-pom-form-6 .option {
+    position: absolute;
+    margin-right: -5px;
+    margin-bottom: 10px;
+}
+
+#lp-code-17 {
+    overflow: visible;
+}
+
+.optionsList .option {
+    margin-bottom: 35px !important;
+    position: unset !important;
+    padding: 5px 5px 5px 0px !important;
+    flex-basis: 49%;
+    height: 23px !important;
+}
+
+.option input[type="radio"] {
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.lp-pom-form-field .lp-form-label {
+    color: #444;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.optionsList label {
+
+    display: flex !important;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid #EF3741 !important;
+    background: #FFF;
+    position: relative;
+
+
+
+}
+
+.optionsList label:after {
+
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-weight: 400;
+    text-rendering: auto;
+    font-size: 14px;
+    position: absolute;
+    right: 18px;
+    color: #4C4747;
+    -webkit-font-smoothing: antialiased;
+    top: 33%;
+}
+
+.lp-pom-form-field .opt-label {
+    color: #444;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.optionsList label span {
+    color: #444;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 160% */
+    text-transform: uppercase;
+
+}
+
+.optionsList label:hover {
+
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #EF3741 !important;
+    background: #000 !important;
+}
+
+.optionsList label:hover span {
+    color: #FFF !important;
+    cursor: pointer;
+}
+
+.optionsList label:hover:after {
+    color: #FFF;
+}
+
+.optionsList input[type="radio"]:checked+label {
+    border-radius: 3px;
+    border: 1px solid #EF3741;
+    background: #000;
+    color: #FFF !important;
+
+}
+
+.optionsList input[type="radio"]:checked+label:after {
+    color: #FFF;
+}
+
+.optionsList input[type="radio"]:checked+label span {
+    color: #FFF !important;
+}
+
+.option input[type="radio"] {
+    opacity: 0 !important;
+}
+
+div#container_what_type_of_project_is_this {
+    top: -27px;
+}
+
+div#container__what_roofing_material_do_you_want {
+    position: relative;
+    top: -27px;
+}
+
+div#container_when_do_you_need_this_work_done {
+    top: -27px;
+}
+
+div#container_street {
+    top: 15px;
+}
+
+div#container_city {
+    top: 105px;
+}
+
+div#container_zip_code {
+    top: 193px;
+}
+
+div#container_first_name {
+    top: 15px;
+}
+
+div#container_last_name {
+    top: 105px;
+}
+
+div#container_phone {
+    top: 15px;
+}
+
+div#container_email {
+    top: 105px;
+}
+
+div#container_how_tall_is_your_housebuilding {
+    top: -27px;
+}
+
+.optionsList .option label {
+    display: inline;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: auto;
+}
+
+@media only screen and (max-width:767.98px) {
+
+
+    h2.form-heading {
+        font-size: 17px !important;
+    }
+
+    .optionsList .option {
+        flex-basis: 100%;
+    }
+
+    .lp-pom-form-field .opt-label {
+        font-size: 12px !important;
+
+    }
+
+    .optionsList label {
+        padding-left: 0px !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 47px !important;
+    }
+
+    .optionsList .option {
+
+        padding: 5px 1px 5px 0px !important;
+        margin-bottom: 39px !important;
+
+    }
+
+    .optionsList label span {
+        color: #444;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+
+    }
+
+}
+
+</style>
